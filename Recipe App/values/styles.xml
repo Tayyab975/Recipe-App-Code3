@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.DishApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.DishApp.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+</resources>

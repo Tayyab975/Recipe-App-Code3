@@ -1,0 +1,199 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Dish4DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDishDetail4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dish4"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/buttonBackToHome4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Recipe:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewDishDetail4"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="363dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonBackToHome4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDishDetail"
+                android:layout_width="343dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text="1. In a small bowl, dissolve the yeast in warm water. Let it sit for about 5 minutes until it becomes frothy."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail2"
+                android:layout_width="360dp"
+                android:layout_height="90dp"
+                android:paddingTop="16dp"
+                android:text=" 2. In a large mixing bowl, combine the flour and salt. Make a well in the center and pour in the yeast mixture and olive oil."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail3"
+                android:layout_width="360dp"
+                android:layout_height="65dp"
+                android:paddingTop="16dp"
+                android:text="3. Stir until a dough forms."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail4"
+                android:layout_width="360dp"
+                android:layout_height="100dp"
+                android:paddingTop="16dp"
+                android:text="4. Turn the dough out onto a floured surface and knead for about 5-7 minutes until it becomes smooth and elastic."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail5"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="5. Place the dough in a greased bowl, cover it with a clean kitchen towel, and let it rise in a warm place for about 1-2 hours until it doubles in size."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail6"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="6. Preheat your oven to 475°F (245°C). If you have a pizza stone, place it in the oven while preheating."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail7"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="7. Once the dough has risen, punch it down and divide it into two equal portions for two pizzas."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail8"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="8. On a lightly floured surface, roll out each portion of dough into a circle of desired thickness."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail9"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="9. While the dough is rising, prepare your pizza toppings. Chop any vegetables and cook any meats that you plan to use."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail10"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="10 .Transfer the rolled-out dough onto a lightly greased pizza pan or parchment paper."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail11"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="11. Spread half of the pizza sauce evenly over the dough, leaving a small border around the edges."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail12"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="12. Sprinkle half of the shredded mozzarella cheese over the sauce."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail13"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="13. Add your desired toppings over the cheese."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail14"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="14. Carefully transfer the assembled pizza (on the pizza pan or parchment paper) into the preheated oven."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail15"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="15. Bake for 12-15 minutes, or until the crust is golden brown and the cheese is bubbly and melted."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail16"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="16. Once the pizza is done, remove it from the oven and let it cool for a few minutes before slicing."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail17"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="17. Serve hot and enjoy your homemade pizza!"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

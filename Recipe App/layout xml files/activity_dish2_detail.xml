@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Dish2DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDishDetail2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dish2"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/buttonBackToHome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Recipe:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewDishDetail2"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="363dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonBackToHome2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDishDetail"
+                android:layout_width="343dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text="1. Boil Pasta: Bring a large pot of salted water to a boil. Add your choice of pasta (such as penne, spaghetti, or fusilli) and cook according to package instructions until al dente. Drain the cooked pasta and set aside."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail2"
+                android:layout_width="360dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text=" 2. Prepare Sauce: In a separate pan, heat olive oil over medium heat. Add minced garlic and sauté until fragrant, but not browned. Then add chopped tomatoes and cook until they start to soften and release their juices."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail3"
+                android:layout_width="360dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text="3.Season: Season the tomato sauce with salt, black pepper, and any additional herbs or spices you like, such as basil, oregano, or red pepper flakes. Stir well to combine."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail4"
+                android:layout_width="360dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text="4. Combine Pasta and Sauce: Add the cooked pasta to the tomato sauce and toss until the pasta is evenly coated with the sauce. If the sauce is too thick, you can add a splash of pasta cooking water to loosen it up."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail5"
+                android:layout_width="360dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text="4. Serve: Once the pasta is heated through and well-coated with the sauce, remove from heat. Serve hot, garnished with grated Parmesan cheese and fresh basil leaves if desired."
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

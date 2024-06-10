@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Dish3DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDishDetail3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dish3"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/buttonBackToHome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Recipe:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewDishDetail3"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="363dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonBackToHome3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDishDetail"
+                android:layout_width="343dp"
+                android:layout_height="93dp"
+                android:paddingTop="16dp"
+                android:text="1. Prepare Fruits: Wash and chop a variety of fruits such as apples, bananas, oranges, grapes, mangoes, and pomegranate seeds into bite-sized pieces. You can use any combination of fruits you like, based on your preference and what's in season."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail2"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:paddingTop="16dp"
+                android:text=" 2. Mix Fruits: In a large bowl, combine the chopped fruits. Toss gently to mix them evenly."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail3"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="3.Add Seasonings: Sprinkle chaat masala powder over the mixed fruits. You can also add a pinch of black salt, roasted cumin powder, and a squeeze of lemon juice for extra flavor. Adjust the seasonings according to your taste preferences."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDishDetail4"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:text="4. Garnish and Serve: Garnish the fruit chaat with chopped fresh mint leaves or cilantro for a burst of freshness. You can also add a sprinkle of chili powder for a hint of spice. Serve immediately as a refreshing and healthy snack or side dish."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
